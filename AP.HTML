@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>أهلاً بك</title>
+    <link rel="stylesheet" href="AP.CSS">
+</head>
+<body>
+    <div class="container">
+        <label>ما اسمك؟</label>
+        <input type="text" id="nameInput" placeholder="ادخل اسمك">
+        <button onclick="submitName()">دخول</button>
+
+        <div id="imageContainer"></div>
+
+        <!-- زر الوضع الداكن -->
+        <button onclick="toggleDarkMode()" id="modeBtn">تبديل الوضع</button>
+
+        <!-- زر عرض/إخفاء الأخطاء -->
+        <button onclick="toggleErrors()" id="errorBtn" style="display: none;">الأخطاء التي تحدث لأدهم</button>
+        <div id="errorContainer" style="display: none;"></div>
+    </div>
+
+    <script src="AP.JS"></script>
+</body>
+</html>
